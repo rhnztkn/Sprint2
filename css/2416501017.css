@@ -1,0 +1,69 @@
+:root {
+    --no: 2416501017;
+    --ton: mod(var(--no), 360);
+    --renk-ana: hsl(var(--ton) 65% 38%);
+    --renk-zemin: hsl(var(--ton) 30% 97%);
+    --font: "Palatino Linotype", serif;
+    --bosluk-m: 1rem;
+    --kose: 8px;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--renk-zemin);
+    margin: 0;
+    padding: var(--bosluk-m);
+}
+
+/* Kartlar için Grid Yapısı */
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--bosluk-m);
+    margin-bottom: var(--bosluk-m);
+}
+
+article {
+    background-color: white;
+    border: 1px solid var(--renk-ana);
+    border-radius: var(--kose);
+    padding: var(--bosluk-m);
+}
+
+/* Geniş ekranlar için 3 sütun */
+@media (min-width: 768px) {
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Form Tasarımı ve Hata Durumu */
+form div {
+    margin-bottom: var(--bosluk-m);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: var(--kose);
+    box-sizing: border-box;
+}
+
+    /* Boş bırakılıp hata veren zorunlu alanlar */
+    input:invalid, select:invalid, textarea:invalid {
+        border-color: red;
+    }
+
+/* Detay Sayfası Yerleşimi */
+.detay-kutusu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--bosluk-m);
+}
+
+@media (min-width: 768px) {
+    .detay-kutusu {
+        grid-template-columns: 1fr 1fr;
+    }
+}

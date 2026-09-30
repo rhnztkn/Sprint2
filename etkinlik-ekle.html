@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kampüs Etkinlikleri - Etkinlik Ekle</title>
+    <link rel="stylesheet" href="css/2416501017.css">
+</head>
+<body>
+    <header>
+        <h1>Etkinlik Ekle</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="etkinlikler.html">Etkinlikler</a>
+            <a href="etkinlik-ekle.html">Ekle</a>
+            <a href="etkinlik-guncelle.html">Güncelle</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <div>
+                <label for="etkinlik-adi">Etkinlik adı</label><br>
+                <input type="text" id="etkinlik-adi" required>
+            </div>
+
+            <div>
+                <label for="kategori">Kategori</label><br>
+                <select id="kategori" required>
+                    <option value="">Seçiniz</option>
+                    <option value="seminer">Seminer</option>
+                    <option value="atolye">Atölye</option>
+                    <option value="soylesi">Söyleşi</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="tarih">Tarih</label><br>
+                <input type="date" id="tarih" required>
+            </div>
+
+            <div>
+                <label for="aciklama">Açıklama</label><br>
+                <textarea id="aciklama"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Kaydet</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kampüs Etkinlikleri</p>
+    </footer>
+</body>
+</html>
