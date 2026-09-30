@@ -6,4 +6,4 @@ Bu proje, Sprint 1 arayüzü üzerine CSS (Responsive Tasarım) giydirilerek, ka
 * **Kullanılan Teknolojiler:** HTML5, CSS3 (Grid, Media Queries, CSS Değişkenleri)
 
 ## Canlı Adres (Vercel)
-[https://kampus-etkinlik-rho.vercel.app/](https://kampus-etkinlik-rho.vercel.app/)
+sprint2-bice.vercel.app
